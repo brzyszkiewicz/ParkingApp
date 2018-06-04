@@ -1,0 +1,1 @@
+In order to test my application easier I assumed that hour is 15 seconds long.
