@@ -4,10 +4,7 @@ import com.pls.me.hire.Touk.Driver.DriverType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.Duration;
-import java.time.LocalDate;
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 
 @Service
 public class TicketServiceImplementation implements TicketService{

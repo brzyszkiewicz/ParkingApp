@@ -3,7 +3,6 @@ package com.pls.me.hire.Touk.Ticket;
 import com.pls.me.hire.Touk.Driver.Driver;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 
 @Entity
 public class Ticket {
