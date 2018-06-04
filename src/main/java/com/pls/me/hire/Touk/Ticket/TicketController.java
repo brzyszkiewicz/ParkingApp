@@ -35,5 +35,4 @@ public class TicketController {
         ticketService.updateTicket(ticketService.getTicketById(ticketId));
 
     }
-
 }
