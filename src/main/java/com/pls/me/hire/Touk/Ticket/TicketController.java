@@ -21,7 +21,14 @@ public class TicketController {
     @RequestMapping(value = "/tickets/{ticketId}", method = RequestMethod.GET)
     @ApiOperation("Returns ticket's details such as price")
     public Ticket getTicket(@ApiParam("ID of the ticket to be obtained") @PathVariable long ticketId) {
-        return ticketService.getTicketById(ticketId);
+        Ticket tmp = null;
+        try{
+            tmp = ticketService.getTicketById(ticketId);
+        }
+        catch(TicketNotFoundException e){
+            e.printStackTrace();
+        }
+        return tmp;
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/tickets/{userId}")
@@ -39,7 +46,13 @@ public class TicketController {
     @RequestMapping(method = RequestMethod.PUT, value = "/tickets/{ticketId}")
     @ApiOperation("Closes ticket with given ID")
     public void closeTicket(@ApiParam("ID of the ticket to be closed") @PathVariable long ticketId) {
-        ticketService.updateTicket(ticketId);
+
+        try {
+            ticketService.updateTicket(ticketId);
+        }
+        catch (TicketNotFoundException e){
+            e.printStackTrace();
+        }
 
     }
 }

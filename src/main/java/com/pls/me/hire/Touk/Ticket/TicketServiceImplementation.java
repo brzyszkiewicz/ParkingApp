@@ -24,13 +24,17 @@ public class TicketServiceImplementation implements TicketService {
         return ticketRepository.findByDriverId(id);
     }
 
-    public Ticket getTicketById(long id) {
+    public Ticket getTicketById(long id) throws TicketNotFoundException{
+        if(!ticketRepository.existsById(id)) throw new TicketNotFoundException("Ticket with given Id doesn't exist");
+        else return ticketRepository.getOne(id);
 
-        return ticketRepository.getOne(id);
     }
 
-    public void updateTicket(long ticketId) {
+    public void updateTicket(long ticketId) throws TicketNotFoundException{
 
+        if(!ticketRepository.existsById(ticketId)){
+            throw new TicketNotFoundException("Ticket with given Id doesn't exist");
+        }
         Ticket ticket = ticketRepository.getOne(ticketId);
         ticket.setEndTime(ZonedDateTime.now());
         ticket.setPrice(calculatePrice(ticket));
