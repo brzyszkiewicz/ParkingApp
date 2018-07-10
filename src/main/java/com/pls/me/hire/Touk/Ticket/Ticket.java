@@ -3,7 +3,7 @@ package com.pls.me.hire.Touk.Ticket;
 import com.pls.me.hire.Touk.Driver.Driver;
 
 import javax.persistence.*;
-import java.time.LocalDate;
+import java.time.ZonedDateTime;
 
 @Entity
 public class Ticket {
@@ -13,9 +13,9 @@ public class Ticket {
     @SequenceGenerator(name="my_ticket_seq_gen", sequenceName="MY_TICKET_SEQ")
     private long id;
 
-    private long startTime;
+    private ZonedDateTime startTime;
 
-    private long endTime;
+    private ZonedDateTime endTime;
 
     private double price;
 
@@ -29,8 +29,8 @@ public class Ticket {
 
     public Ticket(Driver driver) {
         super();
-        this.startTime = System.currentTimeMillis();
-        this.endTime = 0;
+        this.startTime = ZonedDateTime.now();
+        this.endTime = null;
         this.price = 0;
         this.driver = driver;
         this.isPaid = false;
@@ -44,19 +44,19 @@ public class Ticket {
         this.id = id;
     }
 
-    public long getStartTime() {
+    public ZonedDateTime getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(long startTime) {
+    public void setStartTime(ZonedDateTime startTime) {
         this.startTime = startTime;
     }
 
-    public long getEndTime() {
+    public ZonedDateTime getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(long endTime) {
+    public void setEndTime(ZonedDateTime endTime) {
         this.endTime = endTime;
     }
 
