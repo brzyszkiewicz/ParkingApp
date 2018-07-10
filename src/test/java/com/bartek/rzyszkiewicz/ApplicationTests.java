@@ -21,7 +21,7 @@ import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 @SpringBootTest
-public class ToukApplicationTests {
+public class ApplicationTests {
 
 		@Mock
 		TicketRepository ticketMock;
