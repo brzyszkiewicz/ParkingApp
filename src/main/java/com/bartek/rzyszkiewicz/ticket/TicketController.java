@@ -1,6 +1,6 @@
-package com.pls.me.hire.Touk.Ticket;
+package com.bartek.rzyszkiewicz.ticket;
 
-import com.pls.me.hire.Touk.Driver.DriverServiceImplementation;
+import com.bartek.rzyszkiewicz.driver.DriverServiceImplementation;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;

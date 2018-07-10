@@ -1,6 +1,6 @@
-package com.pls.me.hire.Touk.Ticket;
+package com.bartek.rzyszkiewicz.ticket;
 
-import com.pls.me.hire.Touk.Driver.Driver;
+import com.bartek.rzyszkiewicz.driver.Driver;
 
 import javax.persistence.*;
 import java.time.ZonedDateTime;

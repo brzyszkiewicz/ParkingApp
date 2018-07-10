@@ -1,4 +1,4 @@
-package com.pls.me.hire.Touk.Swagger;
+package com.bartek.rzyszkiewicz.swagger;
 
 
 

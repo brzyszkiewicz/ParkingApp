@@ -1,6 +1,4 @@
-package com.pls.me.hire.Touk.Driver;
-
-import com.pls.me.hire.Touk.Ticket.Ticket;
+package com.bartek.rzyszkiewicz.driver;
 
 import javax.persistence.*;
 

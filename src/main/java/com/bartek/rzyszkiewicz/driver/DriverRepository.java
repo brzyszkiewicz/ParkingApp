@@ -1,4 +1,4 @@
-package com.pls.me.hire.Touk.Driver;
+package com.bartek.rzyszkiewicz.driver;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

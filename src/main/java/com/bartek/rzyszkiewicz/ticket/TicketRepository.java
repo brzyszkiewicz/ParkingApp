@@ -1,4 +1,4 @@
-package com.pls.me.hire.Touk.Ticket;
+package com.bartek.rzyszkiewicz.ticket;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

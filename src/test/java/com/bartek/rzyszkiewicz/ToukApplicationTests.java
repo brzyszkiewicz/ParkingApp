@@ -1,11 +1,11 @@
-package com.pls.me.hire.Touk;
+package com.bartek.rzyszkiewicz;
 
-import com.pls.me.hire.Touk.Driver.Driver;
-import com.pls.me.hire.Touk.Driver.DriverType;
-import com.pls.me.hire.Touk.Ticket.Ticket;
-import com.pls.me.hire.Touk.Ticket.TicketNotFoundException;
-import com.pls.me.hire.Touk.Ticket.TicketRepository;
-import com.pls.me.hire.Touk.Ticket.TicketServiceImplementation;
+import com.bartek.rzyszkiewicz.ticket.TicketNotFoundException;
+import com.bartek.rzyszkiewicz.driver.Driver;
+import com.bartek.rzyszkiewicz.driver.DriverType;
+import com.bartek.rzyszkiewicz.ticket.Ticket;
+import com.bartek.rzyszkiewicz.ticket.TicketRepository;
+import com.bartek.rzyszkiewicz.ticket.TicketServiceImplementation;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

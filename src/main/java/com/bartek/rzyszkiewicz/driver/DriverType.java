@@ -1,4 +1,4 @@
-package com.pls.me.hire.Touk.Driver;
+package com.bartek.rzyszkiewicz.driver;
 
 
 public enum DriverType {

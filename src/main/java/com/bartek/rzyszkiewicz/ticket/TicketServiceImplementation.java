@@ -1,6 +1,6 @@
-package com.pls.me.hire.Touk.Ticket;
+package com.bartek.rzyszkiewicz.ticket;
 
-import com.pls.me.hire.Touk.Driver.DriverType;
+import com.bartek.rzyszkiewicz.driver.DriverType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
